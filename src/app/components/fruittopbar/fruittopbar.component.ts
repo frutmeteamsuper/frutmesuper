@@ -128,9 +128,19 @@ export class FruittopbarComponent implements OnInit {
       // this.order.total=(this._uw.subTotal*this._uw.currency);
       this.order.car=this._uw.car;
       this._uw.pedido.asunto="Nuevo pedido";
+      this._uw.pedido.nroReserva=this.order.npedido;
+      this._uw.pedido.adminName="admin name",
+      this._uw.pedido.productName="test",
+      this._uw.pedido.nombre="tester",
+      this._uw.pedido.fecha="hoy",
+      this._uw.pedido.precioUni=10,
+      this._uw.pedido.cant=2,
+      this._uw.pedido.monto=100,
+      this._uw.pedido.adelanto=30,
+      this._uw.pedido.email="frutmeteam@protonmail.com",
       // this._uw.pedido.adminName=this._uw.info[0].adminName;
       // this._uw.pedido.adminEmail=this._uw.info[0].adminEmail;
-      //this.dataApi.sendMailNewBookAppToAdmin(this._uw.pedido).subscribe();
+      this.dataApi.sendMailNewBookAppToAdmin(this._uw.pedido).subscribe();
       this._uw.order=this.order;
       console.log("enviando...");
       this.dataApi.saveOrder(this.order).subscribe(
