@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
 
       if (this.swUpdate.isEnabled) {
             this.swUpdate.available.subscribe(() => {
-                if(confirm("DrYogur tiene nuevas mejoras. desea cargar esta nueva versión?")) {
+                if(confirm("Frutme Super tiene nuevas mejoras. desea cargar esta nueva versión?")) {
                     window.location.reload();
                 }
             });
