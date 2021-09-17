@@ -112,6 +112,10 @@
                             <tr [hidden]="!_uw.recargo || this.ngFormSendOrder.value.metodo!='paypal'">
                                 <td class="cart_total_label">Recargo Paypal ({{this._uw.info[0].paypal}} %)</td>
                                 <td class="cart_total_amount">{{this._uw.subTotal*this._uw.currency*(this._uw.info[0].paypal/100) | number :'1.2-2' }}</td>
+                            </tr> 
+                            <tr [hidden]="!_uw.recargo || this.ngFormSendOrder.value.metodo!='usdt'">
+                                <td class="cart_total_label">Recargo USDT ({{this._uw.info[0].usdt}} %)</td>
+                                <td class="cart_total_amount">{{this._uw.subTotal*this._uw.currency*(this._uw.info[0].usdt/100) | number :'1.2-2' }}</td>
                             </tr>
                           
                             <tr>

@@ -105,7 +105,7 @@ export class FruittopbarComponent implements OnInit {
     }
 
       
-     if ( this._uw.method==="paypal" || this._uw.method==="zelle"){
+     if ( this._uw.method==="paypal" || this._uw.method==="zelle"|| this._uw.method==="usdt"){
 
       this.order.total=((this._uw.total*this._uw.comision/100)+this._uw.total)*this._uw.currency ;
      }
@@ -242,20 +242,29 @@ cartCalculate(){
   setMethod(method){
     let met = method;
     this._uw.method=met;
-    if(met=="zelle" || met=="paypal" || met=="efectivo"){
+    if(met=="zelle" || met=="paypal" || met=="efectivo" || met=="usdt"){
       this.setUsd();
       if(met=="paypal"){
         this._uw.comision=this._uw.info[0].paypal;
         this._uw.paypal=true;
         this._uw.zelle=false;
+        this._uw.usdt=false;
+      }
+      if(met=="usdt"){
+        this._uw.paypal=false;
+        this._uw.comision=this._uw.info[0].usdt;
+        this._uw.usdt=true;
+        this._uw.zelle=false;
       }
       if(met=="zelle"){
         this._uw.comision=this._uw.info[0].zelle;
+        this._uw.usdt=false;
         this._uw.zelle=true;
         this._uw.paypal=false;
       }
        if(met=="efectivo"){
         this._uw.comision=0;
+        this._uw.usdt=false;
         this._uw.zelle=false;
              this._uw.paypal=false;
       }
@@ -265,6 +274,7 @@ cartCalculate(){
       this.setBs();
       this._uw.comision=0;
       this._uw.paypal=false;
+      this._uw.usdt=false;
        this._uw.zelle=false;
     }
   }

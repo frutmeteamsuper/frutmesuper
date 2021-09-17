@@ -181,6 +181,11 @@ export class FruitcartComponent implements OnInit {
           this.recargo=(this._uw.subTotal*this._uw.currency)*(this._uw.info[0].paypal/100);
              this._uw.recargo=true;
       } 
+      if(this.ngFormSendOrder.value.metodo=="usdt"){
+          this.setUsd();
+          this.recargo=(this._uw.subTotal*this._uw.currency)*(this._uw.info[0].usdt/100);
+             this._uw.recargo=true;
+      } 
        if(this.ngFormSendOrder.value.metodo=="bsTansferencia"){
         this.recargo=0;
         this.setBs();

@@ -20,6 +20,7 @@ export class UserWService {
 	currency:number=1;
 		comision:number=1;
 		paypal:boolean=false;
+		usdts:boolean=false;
 		zelle:boolean=false;
 	categorySelected:string;
 	editingTrek:boolean=false;
