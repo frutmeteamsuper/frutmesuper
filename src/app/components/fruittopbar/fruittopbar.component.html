@@ -291,7 +291,8 @@
                 <i class="dropdown icon d-icon"></i>
                  <label class="control-label"style="font-size: 18px;" [hidden]="_uw.method" >Que -</label>
                 <div class="text"> Método de pago</div>
-                <div class="menu">
+                <div class="menu">  
+                  <div class="item" data-value="0" (click)="setMethod('usdt')">USDT (Criptomonedas)</div>
                   <div class="item" data-value="0" (click)="setMethod('zelle')">USD Zelle</div>
                   <div class="item" data-value="1" (click)="setMethod('paypal')">USD PayPal</div>
                   <div class="item" data-value="2" (click)="setMethod('efectivo')">USD Efectivo</div>
