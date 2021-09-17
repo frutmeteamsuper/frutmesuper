@@ -9,7 +9,11 @@
                     </p>
                     <p [hidden]="this._uw.method!='paypal'">Procede con el pago haciendo click aqui: <a href="{{this._uw.info[0].paypaladdress}}" target="_blank">{{this._uw.info[0].paypaladdress}}</a> (Recuerda realizar una captura)</p>
                     <p [hidden]="this._uw.method!='zelle'">Dirección email para el pago Zelle: <a>{{this._uw.info[0].zelleaddress}}</a> (Recuerda realizar una captura)</p>
-                     <p [hidden]="this._uw.method!='usdt'">Dirección wallet para el pago con usdt: <a>{{this._uw.info[0].usdtaddress}}</a> (Recuerda realizar una captura)</p>
+                     <p [hidden]="this._uw.method!='usdt'">Dirección wallet para el pago con usdt: <a>{{this._uw.info[0].usdtaddress}}</a> 
+                        </p>
+                        <p>
+                            
+                    (Recuerda realizar una captura)</p>
                     <div class="delivery-address-bg">
                         <div class="title585">
                             <div class="pln-icon"><i class="uil uil-shopping-cart-alt"></i></div>
