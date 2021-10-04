@@ -179,13 +179,13 @@
             <div class="cart-text">            
               <h4 >{{tix.productName}}</h4>
               <h4 [hidden]="this._uw.currency==this._uw.info[0].bs">{{tix.quantity}}({{tix.presentacion}}) x {{tix.globalPrice*this._uw.currency |  number:'1.0-2' }}</h4>
-                <h4 [hidden]="this._uw.currency==this._uw.info[0].usd ">{{tix.quantity}}({{tix.presentacion}}) x {{tix.globalPrice*this._uw.currency |  number:'1.0-0' }}</h4>
+                <h4 [hidden]="this._uw.currency==this._uw.info[0].usd ">{{tix.quantity}}({{tix.presentacion}}) x {{tix.globalPrice*this._uw.currency |  number:'1.2-2' }}</h4>
               <div style="margin-top: 10px; margin-right: 1px; text-align:right;">
                 <div >
                   <span style="color:#005e58;">Subtotal = </span>
                  <span class="cart-item-price" [hidden]="this._uw.currency==this._uw.info[0].bs">{{tix.globalPrice*tix.quantity*this._uw.currency |  number:'1.0-2'}}
                  </span>
-                 <span class="cart-item-price" [hidden]="this._uw.currency==this._uw.info[0].usd ">{{tix.globalPrice*tix.quantity*this._uw.currency |  number:'1.0-0'}}
+                 <span class="cart-item-price" [hidden]="this._uw.currency==this._uw.info[0].usd ">{{tix.globalPrice*tix.quantity*this._uw.currency |  number:'1.2-2'}}
                  </span>
                </div>
               </div>
@@ -344,7 +344,7 @@
         </div>
         <div class="main-total-cart">
           <h2 [hidden]="this._uw.currency==this._uw.info[0].usd ">Total BsS</h2>
-          <span  [hidden]="this._uw.currency==this._uw.info[0].usd ">{{_uw.total *this._uw.currency | number: '1.0-0'}}</span>
+          <span  [hidden]="this._uw.currency==this._uw.info[0].usd ">{{_uw.total *this._uw.currency | number: '1.2-2'}}</span>
         </div>
         <div class="main-total-cart">
           <h2 [hidden]="this._uw.currency==this._uw.info[0].bs ">Total $USD</h2>
@@ -387,7 +387,7 @@
         </div>
           <div class="main-total-cart">
           <h2 [hidden]="this._uw.currency==this._uw.info[0].usd ">Total BsS</h2>
-          <span  [hidden]="this._uw.currency==this._uw.info[0].usd ">{{_uw.total *this._uw.currency | number: '1.0-0'}}</span>
+          <span  [hidden]="this._uw.currency==this._uw.info[0].usd ">{{_uw.total *this._uw.currency | number: '1.2-2'}}</span>
         </div>
 
 

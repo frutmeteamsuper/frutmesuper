@@ -29,9 +29,9 @@
                               		</td>
                                   	<td class="product-subtotal" data-title="" [hidden]="this._uw.currency==this._uw.info[0].colp || this._uw.currency==this._uw.info[0].bs"  style="border-top: 0px;">$ {{this._uw.car[i].quantity*this._uw.car[i].globalPrice*this._uw.currency | number :'1.2-2'}}</td>
                                     
-                                    <td class="product-subtotal" data-title="" [hidden]="this._uw.currency==this._uw.info[0].colp || this._uw.currency==this._uw.info[0].usd" style="border-top: 0px;" >Bs.S. {{this._uw.car[i].quantity*this._uw.car[i].globalPrice*this._uw.currency | number :'1.0-0'}}</td>
+                                    <td class="product-subtotal" data-title="" [hidden]="this._uw.currency==this._uw.info[0].colp || this._uw.currency==this._uw.info[0].usd" style="border-top: 0px;" >Bs.S. {{this._uw.car[i].quantity*this._uw.car[i].globalPrice*this._uw.currency | number :'1.2-2'}}</td>
                                     
-                                    <td class="product-subtotal" data-title="" [hidden]="this._uw.currency==this._uw.info[0].bs || this._uw.currency==this._uw.info[0].usd"  style="border-top: 0px;">Colp {{this._uw.car[i].quantity*this._uw.car[i].globalPrice*this._uw.currency | number :'1.0-0'}}</td>
+                                    <td class="product-subtotal" data-title="" [hidden]="this._uw.currency==this._uw.info[0].bs || this._uw.currency==this._uw.info[0].usd"  style="border-top: 0px;">Colp {{this._uw.car[i].quantity*this._uw.car[i].globalPrice*this._uw.currency | number :'1.2-2'}}</td>
                                    <!--  <td class="product-remove" data-title="Quitar" >
                                     	<a (click)="remove(i)" ><i class="ti-close" style=""></i></a>
                                     </td> -->
@@ -92,12 +92,12 @@
                                     <span class="cart_amount" [hidden]="this._uw.currency==this._uw.info[0].bs || this._uw.currency==this._uw.info[0].usd"> 
                                         <span class="price_symbole">COLP
                                         </span>
-                                    {{this._uw.subTotal*this._uw.currency | number :'1.0-0' }}
+                                    {{this._uw.subTotal*this._uw.currency | number :'1.2-2' }}
                                     </span>
                                     <span class="cart_amount" [hidden]="this._uw.currency==this._uw.info[0].colp || this._uw.currency==this._uw.info[0].usd"> 
                                         <span class="price_symbole">Bs.S.
                                         </span>
-                                    {{this._uw.subTotal*this._uw.currency | number :'1.0-0' }}
+                                    {{this._uw.subTotal*this._uw.currency | number :'1.2-2' }}
                                     </span>
                                 </td>
                             </tr>
@@ -129,12 +129,12 @@
                                     <span class="cart_amount" [hidden]="this._uw.currency==this._uw.info[0].bs || this._uw.currency==this._uw.info[0].usd"> 
                                         <span class="price_symbole">COLP
                                         </span>
-                                    {{(this._uw.subTotal*this._uw.currency)+this.recargo | number :'1.0-0' }}
+                                    {{(this._uw.subTotal*this._uw.currency)+this.recargo | number :'1.2-2' }}
                                     </span>
                                     <span class="cart_amount" [hidden]="this._uw.currency==this._uw.info[0].colp || this._uw.currency==this._uw.info[0].usd"> 
                                         <span class="price_symbole">Bs.S.
                                         </span>
-                                    {{(this._uw.subTotal*this._uw.currency)+this.recargo | number :'1.0-0' }}
+                                    {{(this._uw.subTotal*this._uw.currency)+this.recargo | number :'1.2-2' }}
                                     </span>
                                 </strong></td>
                             </tr>
