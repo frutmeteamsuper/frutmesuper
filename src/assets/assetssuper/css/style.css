@@ -1180,7 +1180,7 @@ background-image:-webkit-linear-gradient(left, #fff, #fff);
 
 
 .bs-canvas-close {
-    color: #fff !important;
+    color: #000 !important;
     opacity: 1 !important;
 }
 		
@@ -1193,6 +1193,7 @@ background-image:-webkit-linear-gradient(left, #fff, #fff);
 
 .main-cart-title {
     font-size: 18px;
+        color: #005e53;
     font-weight: 600;
 }
 
@@ -1582,7 +1583,7 @@ background-image:-webkit-linear-gradient(left, #fff, #fff);
 }
 
 .bs-canvas-close {
-    color: #fff !important;
+    color: #000 !important;
     opacity: 1 !important;
 }
 		
@@ -1595,7 +1596,7 @@ background-image:-webkit-linear-gradient(left, #fff, #fff);
 }
 
 .main-cart-title {
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 500;
 }
 
